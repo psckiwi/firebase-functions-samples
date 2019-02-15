@@ -8,7 +8,7 @@ import * as functions from 'firebase-functions';
 // });
 
 export const users = functions.https.onRequest((req, res) => {
-        let init_users = [
+        const init_users = [
             { "name": "홍길동", "email": "blabla@company.com" },
             { "name": "김길동", "email": "blabla@company.com" },
             { "name": "박길동", "email": "blabla@company.com" },
@@ -27,21 +27,21 @@ export const users = functions.https.onRequest((req, res) => {
 
         ];
 
-        let match_users = init_users.filter(user => {
-            return user["name"].indexOf(req.query.name) > -1
+        const match_users = init_users.filter(user => {
+            return user["name"].indexOf(req.query.text) > -1
         });
 
-        let resData = {
+        const resData = {
             // "request method": req.method,
             // "request query": req.query,
             // "request body": req.body,
             "startAt": 0,
             "maxResults": 10,
             "total": match_users.length,
-            "results": match_users
+            "users": match_users
         };
 
-        res.contentType('application/json')
+        res.contentType('application/json');
         res.send(resData);
     })
 ;
