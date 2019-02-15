@@ -9,12 +9,22 @@ import * as functions from 'firebase-functions';
 
 export const users = functions.https.onRequest((req, res) => {
         let init_users = [
-            { "name": "홍길동", "email": "blabla@test.com" },
-            { "name": "김길동", "email": "blabla@test.com" },
-            { "name": "박길동", "email": "blabla@test.com" },
-            { "name": "이길동", "email": "blabla@test.com" },
-            { "name": "최길동", "email": "blabla@test.com" },
-            { "name": "박세채", "email": "blabla@test.com" }
+            { "name": "홍길동", "email": "blabla@company.com" },
+            { "name": "김길동", "email": "blabla@company.com" },
+            { "name": "박길동", "email": "blabla@company.com" },
+            { "name": "이길동", "email": "blabla@company.com" },
+            { "name": "최길동", "email": "blabla@company.com" },
+            { "name": "박세채", "email": "blabla@company.com" },
+            { "name": "Liam", "email": "blabla@company.com" },
+            { "name": "Noah", "email": "blabla@company.com" },
+            { "name": "Logan", "email": "blabla@company.com" },
+            { "name": "Lucas", "email": "blabla@company.com" },
+            { "name": "Mason", "email": "blabla@company.com" },
+            { "name": "Oliver", "email": "blabla@company.com" },
+            { "name": "Elijah", "email": "blabla@company.com" },
+            { "name": "Aiden", "email": "blabla@company.com" },
+            { "name": "James", "email": "blabla@company.com" }
+
         ];
 
         let match_users = init_users.filter(user => {

@@ -14,4 +14,4 @@ This is sample project.
 * `firebase login`
 * `firebase deploy`
 ### Call API
-API URL : {Your Function URL}/users?name=xxx
+API URL : {Your Function URL}/users?name=L
