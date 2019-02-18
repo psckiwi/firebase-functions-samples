@@ -1,5 +1,5 @@
 # Cloud Functions for Firebase
-This is sample project.
+This is sample project in typescript.
 ***
 ## Getting Started
 ### Install Firebase CLI
